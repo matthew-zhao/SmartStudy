@@ -1,7 +1,8 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -9,34 +10,67 @@
     tools:context=".MainActivity" >
 
     <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_main_new_quiz"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:paddingBottom="32dp"
+        android:paddingTop="32dp"
         android:text="@string/main_menu_btn_new_quiz" />"
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:text="@string/main_menu_btn_edit_quiz" />
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_main_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="32dp"
+            android:paddingTop="32dp"
+            android:text="@string/main_menu_btn_edit" />
+
+        <Button
+            android:id="@+id/btn_main_import"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="32dp"
+            android:paddingTop="32dp"
+            android:text="@string/main_menu_btn_import" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_main_take_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="32dp"
+            android:paddingTop="32dp"
+            android:text="@string/main_menu_btn_take_quiz" />
+
+        <Button
+            android:id="@+id/btn_main_see_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="32dp"
+            android:paddingTop="32dp"
+            android:text="@string/main_menu_btn_see_results" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_main_quit"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:text="@string/main_menu_btn_take_quiz" />
+        android:paddingBottom="32dp"
+        android:paddingTop="32dp"
+        android:text="@string/main_menu_btn_quit" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:text="@string/main_menu_btn_see_results" />
-
-</RelativeLayout>
+</LinearLayout>
