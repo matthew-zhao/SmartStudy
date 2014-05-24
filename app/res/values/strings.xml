@@ -4,5 +4,10 @@
     <string name="app_name">SmartStudy</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    
+    <string name="main_menu_btn_new_quiz">New Quiz</string>
+    <string name="main_menu_btn_edit_quiz">Edit Quiz</string>
+    <string name="main_menu_btn_take_quiz">Take Quiz</string>
+    <string name="main_menu_btn_see_results">See Results</string>
 
 </resources>
