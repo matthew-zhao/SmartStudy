@@ -53,8 +53,64 @@ public class DummySetSource implements SetBankSource {
 		set.terms.add(term);
 		// etc...
 		
+		set = new TermSet();
+		set.name = "Motor vechicles";
+		set.categories.add("trucks");
+		set.categories.add("cars");
+		set.categories.add("buses");
+		sets.add(set);
+		
+		term = new Term("Honda Accord", "<-DEFINE->");
+		term.addCategory("Cars");
+		set.terms.add(term);
+		
+		term = new Term("F-Series", "<-DEFINE->");
+		term.addCategory("Trucks");
+		set.terms.add(term);
+		// etc...
+		
+		set = new TermSet();
+		set.name = "Video Games";
+		set.categories.add("Single Player");
+		set.categories.add("Multiplayer");
+		sets.add(set);
+		
+		term = new Term("Runescape", "<-DEFINE->");
+		term.addCategory("Multiplayer");
+		set.terms.add(term);
+		
+		term = new Term("League of Legends", "<-DEFINE->");
+		term.addCategory("Multiplayer");
+		set.terms.add(term);
+		// etc...
+		
+		set = new TermSet();
+		set.name = "Bicycles";
+		set.categories.add("Geared Bike");
+		set.categories.add("Non-Geared Bike");
+		sets.add(set);
+		
+		term = new Term("Schwinn Discover", "<-DEFINE->");
+		term.addCategory("Geared Bike");
+		set.terms.add(term);
+		
+		// etc...
+		
+		set = new TermSet();
+		set.name = "Cars";
+		set.categories.add("Coupe");
+		set.categories.add("Sedan");
+		sets.add(set);
+		
+		term = new Term("BMW 535d", "<-DEFINE->");
+		term.addCategory("Sedan");
+		set.terms.add(term);
 		
 		
+		term = new Term("BMW 528i", "<-DEFINE->");
+		term.addCategory("Coupe");
+		set.terms.add(term);
+		// etc...
 		return sets;
 	}
 
