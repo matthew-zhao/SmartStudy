@@ -41,12 +41,10 @@ public final class R {
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int activity_term=0x7f030001;
-        public static final int activity_view_term=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f070000;
         public static final int term=0x7f070001;
-        public static final int view_term=0x7f070002;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
