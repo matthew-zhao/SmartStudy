@@ -33,5 +33,10 @@
     <string name="results_btn_time">Time</string>
     <string name="results_btn_correct">% Correct</string>
     <string name="results_btn_perquestion">Trends/Question</string>
+    
+    <!-- CategoriesDialog -->
+    <string name="categories_dialog_title">Choose categories</string>
+    <string name="categories_dialog_done">Done</string>
+    <string name="categories_dialog_add">Add category</string>
 
 </resources>

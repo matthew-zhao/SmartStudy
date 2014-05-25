@@ -66,6 +66,11 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
+        public static final int categories_dialog_add=0x7f05001a;
+        public static final int categories_dialog_done=0x7f050019;
+        /**  CategoriesDialog 
+         */
+        public static final int categories_dialog_title=0x7f050018;
         public static final int hello_world=0x7f050002;
         public static final int import_btn_add=0x7f050013;
         public static final int import_btn_exit=0x7f050014;
