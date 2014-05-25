@@ -6,6 +6,8 @@ import java.util.Collections;
 import java.util.Set;
 import java.util.TreeSet;
 
+import com.dongsquad.smartstudy.json.JSONObject;
+
 public class Term implements Serializable {
 
 	private String term;
@@ -17,6 +19,11 @@ public class Term implements Serializable {
 		this.definition = definition;
 	}
 	
+	public Term(JSONObject jsonObject) {
+		term = jsonObject.getString("term");
+		definition = jsonObject.getString("definition");
+	}
+
 	public String getTerm() { return term; }
 	public String getDefinition() { return definition; }
 	public Set<CharSequence> getCategories() { return Collections.unmodifiableSet(categories); }

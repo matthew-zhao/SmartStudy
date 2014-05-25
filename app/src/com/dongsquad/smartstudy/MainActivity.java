@@ -56,6 +56,11 @@ public class MainActivity extends Activity implements SetChooserDialogListener {
 		setChooser.setSource(this.source);
 		setChooser.show(getFragmentManager(), "setChooser");
 	}
+	
+	public void doImport(View source) {
+		Intent intent = new Intent(MainActivity.this, ImportActivity.class);
+		startActivity(intent);
+	}
 
 	@Override
 	public void onSetChooserDialogPositiveClick(SetChooserDialogFragment dialog) {
