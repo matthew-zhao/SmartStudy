@@ -72,6 +72,7 @@ public class LearnActivity extends Activity {
 	public void pass(View source) {
 		times.set(index, System.currentTimeMillis() - timeNow);
 		nextTerm();
+		System.out.println("Passed!");
 	}
 
 	public void fail(View source) {
@@ -107,7 +108,6 @@ public class LearnActivity extends Activity {
 						LearnActivity.this.setTerm();
 					}
 				});
-		timeNow = System.currentTimeMillis();
 	}
 
 	private void setTerm() {
@@ -118,9 +118,10 @@ public class LearnActivity extends Activity {
 		((TextView) findViewById(R.id.lbl_term)).setText(term.getTerm());
 		((TextView) findViewById(R.id.lbl_definition)).setText(term
 				.getDefinition());
-
+		
 		((Button) findViewById(R.id.btn_learn_pass)).setEnabled(true);
 		((Button) findViewById(R.id.btn_learn_fail)).setEnabled(true);
+		timeNow = System.currentTimeMillis();
 	}
 
 }
