@@ -24,7 +24,7 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080018;
+        public static final int action_settings=0x7f080019;
         public static final int btn_main_edit=0x7f080008;
         public static final int btn_main_import=0x7f080009;
         public static final int btn_main_new_quiz=0x7f080007;
@@ -44,6 +44,7 @@ public final class R {
         public static final int lbl_number=0x7f08000f;
         public static final int linearLayout1=0x7f080006;
         public static final int listView1=0x7f080017;
+        public static final int menu_settings=0x7f080018;
         public static final int textView1=0x7f080000;
         public static final int textView2=0x7f080001;
         public static final int textView3=0x7f080003;
@@ -54,14 +55,16 @@ public final class R {
         public static final int activity_import=0x7f030000;
         public static final int activity_know=0x7f030001;
         public static final int activity_main=0x7f030002;
-        public static final int activity_results=0x7f030003;
-        public static final int activity_term=0x7f030004;
-        public static final int category_list_item=0x7f030005;
-        public static final int fragment_categories_dialog=0x7f030006;
+        public static final int activity_new_set=0x7f030003;
+        public static final int activity_results=0x7f030004;
+        public static final int activity_term=0x7f030005;
+        public static final int category_list_item=0x7f030006;
+        public static final int fragment_categories_dialog=0x7f030007;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
-        public static final int term=0x7f070001;
+        public static final int activity_new_set=0x7f070000;
+        public static final int main=0x7f070001;
+        public static final int term=0x7f070002;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -83,6 +86,7 @@ public final class R {
         public static final int main_menu_btn_quit=0x7f050008;
         public static final int main_menu_btn_see_results=0x7f050007;
         public static final int main_menu_btn_take_quiz=0x7f050006;
+        public static final int menu_settings=0x7f05001e;
         public static final int results_btn_correct=0x7f050016;
         public static final int results_btn_perquestion=0x7f050017;
         /**  ResultsActivity 
