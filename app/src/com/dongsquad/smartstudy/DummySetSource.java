@@ -140,7 +140,7 @@ public class DummySetSource implements SetsSource {
 	}
 	
 	@Override
-	public List<TermSet> getSet() {
+	public List<TermSet> getSets() {
 		return sets;
 	}
 

@@ -62,7 +62,7 @@ public class MainActivity extends Activity implements SetChooserDialogListener {
 		Utility.toast(this, "chose set: " + setChooser.getSelected());
 		
 		TermSet chosenSet = null;
-		for (TermSet set : source.getSet()) {
+		for (TermSet set : source.getSets()) {
 			if (set.name.equals(setChooser.getSelected().toString()))
 				chosenSet = set;
 		}

@@ -58,7 +58,7 @@ public class SetChooserDialogFragment extends DialogFragment {
 	    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 	    
 	    if (source != null) {
-	    	List<TermSet> sets = source.getSet();
+	    	List<TermSet> sets = source.getSets();
 	    	if (!sets.isEmpty()) {
 	    		items = new CharSequence[sets.size()];
 	    		for (int i = 0; i < sets.size(); i++) {
