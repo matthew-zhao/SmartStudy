@@ -23,13 +23,15 @@
     <string name="title_activity_know">KnowActivity</string>
     <string name="title_activity_results">ResultsActivity</string>
     <string name="know_show_answer">Show Answer</string>
+    
+    <!-- ImportActivity -->
     <string name="title_activity_import">ImportActivity</string>
     <string name="import_btn_add">Add</string>
     <string name="import_btn_exit">Exit</string>
+    
+    <!-- ResultsActivity -->
     <string name="results_btn_time">Time</string>
     <string name="results_btn_correct">% Correct</string>
     <string name="results_btn_perquestion">Trends/Question</string>
-    <string />
-    <string name="title_activity_learn">LearnActivity</string>
 
 </resources>
