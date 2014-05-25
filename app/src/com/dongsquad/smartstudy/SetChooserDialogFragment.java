@@ -33,11 +33,11 @@ public class SetChooserDialogFragment extends DialogFragment {
         }
     }
 	
-    private SetBankSource source = null;
+    private SetsSource source = null;
 	private CharSequence[] items = { };
 	private int mSelected = -1;
 	
-	public void setSource(SetBankSource source) {
+	public void setSource(SetsSource source) {
 		this.source = source;
 	}
 	

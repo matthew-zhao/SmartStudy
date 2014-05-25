@@ -2,6 +2,6 @@ package com.dongsquad.smartstudy;
 
 import java.util.List;
 
-public interface SetBankSource {
+public interface SetsSource {
 	List<TermSet> getSet();
 }

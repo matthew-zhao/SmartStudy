@@ -15,7 +15,7 @@ public class MainActivity extends Activity implements SetChooserDialogListener {
 	private int action = 0;
 	
 	private SetChooserDialogFragment setChooser = new SetChooserDialogFragment();
-	private SetBankSource source = new DummySetSource();
+	private SetsSource source = new DummySetSource();
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

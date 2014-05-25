@@ -3,7 +3,7 @@ package com.dongsquad.smartstudy;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DummySetSource implements SetBankSource {
+public class DummySetSource implements SetsSource {
 
 	private ArrayList<TermSet> sets;
 	
