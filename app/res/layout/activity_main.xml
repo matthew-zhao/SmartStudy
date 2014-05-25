@@ -63,6 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="getResults"
             android:paddingBottom="32dp"
             android:paddingTop="32dp"
             android:text="@string/main_menu_btn_see_results" />

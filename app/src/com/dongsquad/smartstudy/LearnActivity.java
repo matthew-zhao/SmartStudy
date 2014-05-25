@@ -1,5 +1,7 @@
 package com.dongsquad.smartstudy;
 
+import java.util.ArrayList;
+
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.app.Activity;
@@ -15,7 +17,8 @@ import android.widget.Toast;
 public class LearnActivity extends Activity {
 
 	public static final String EXTRA_TERMSET = "com.dongsquad.smartstudy.extra.TERMSET";
-
+	public static ArrayList<Long> times = new ArrayList<Long>();
+	private static long timeNow = 0;
 	private TermSet terms;
 	private int index = 0;
 
@@ -67,10 +70,12 @@ public class LearnActivity extends Activity {
 	}
 
 	public void pass(View source) {
+		times.set(index, System.currentTimeMillis() - timeNow);
 		nextTerm();
 	}
 
 	public void fail(View source) {
+		times.set(index, System.currentTimeMillis()- timeNow);
 		((Button) findViewById(R.id.btn_learn_fail)).setEnabled(false);
 
 		findViewById(R.id.view_separator).setVisibility(View.VISIBLE);
@@ -102,6 +107,7 @@ public class LearnActivity extends Activity {
 						LearnActivity.this.setTerm();
 					}
 				});
+		timeNow = System.currentTimeMillis();
 	}
 
 	private void setTerm() {
