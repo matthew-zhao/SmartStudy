@@ -26,6 +26,14 @@
             android:name="com.dongsquad.smartstudy.TermActivity"
             android:label="@string/title_activity_term" >
         </activity>
+        <activity
+            android:name="com.dongsquad.smartstudy.LearnActivity"
+            android:label="@string/title_activity_learn"
+            android:parentActivityName="com.dongsquad.smartstudy.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dongsquad.smartstudy.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -9,8 +9,10 @@ import android.view.View;
 
 public class MainActivity extends Activity implements SetChooserDialogListener {
 
-	private boolean edit = false;
-	private boolean takeQuiz = false;
+	private static final int EDIT = 1;
+	private static final int QUIZ = 2;
+	private static final int LEARN = 3;
+	private int action = 0;
 	
 	private SetChooserDialogFragment setChooser = new SetChooserDialogFragment();
 	private SetBankSource source = new DummySetSource();
@@ -38,15 +40,19 @@ public class MainActivity extends Activity implements SetChooserDialogListener {
 	}
 	
 	public void edit(View source) {
-		takeQuiz = false;
-		edit = true;
+		action = EDIT;
 		setChooser.setSource(this.source);
 		setChooser.show(getFragmentManager(), "setChooser");
 	}
 	
 	public void takeQuiz(View source) {
-		edit = false;
-		takeQuiz = true;
+		action = QUIZ;
+		setChooser.setSource(this.source);
+		setChooser.show(getFragmentManager(), "setChooser");
+	}
+	
+	public void learn(View source) {
+		action = LEARN;
 		setChooser.setSource(this.source);
 		setChooser.show(getFragmentManager(), "setChooser");
 	}
@@ -54,6 +60,18 @@ public class MainActivity extends Activity implements SetChooserDialogListener {
 	@Override
 	public void onSetChooserDialogPositiveClick(SetChooserDialogFragment dialog) {
 		Utility.toast(this, "chose set: " + setChooser.getSelected());
+		
+		TermSet chosenSet = null;
+		for (TermSet set : source.getSet()) {
+			if (set.name.equals(setChooser.getSelected().toString()))
+				chosenSet = set;
+		}
+		
+		if (action == LEARN) {
+			Intent intent = new Intent(MainActivity.this, LearnActivity.class);
+			intent.putExtra(LearnActivity.EXTRA_TERMSET, chosenSet);
+			startActivity(intent);
+		}
 	}
 
 	@Override

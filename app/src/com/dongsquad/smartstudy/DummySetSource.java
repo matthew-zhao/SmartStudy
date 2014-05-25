@@ -5,9 +5,11 @@ import java.util.List;
 
 public class DummySetSource implements SetBankSource {
 
-	@Override
-	public List<TermSet> getSet() {
-		ArrayList<TermSet> sets = new ArrayList<TermSet>();
+	private ArrayList<TermSet> sets;
+	
+	public DummySetSource() {
+		sets = new ArrayList<TermSet>();
+		
 		TermSet set;
 		Term term;
 		
@@ -135,6 +137,10 @@ public class DummySetSource implements SetBankSource {
 		term.addCategory("Coupe");
 		set.terms.add(term);
 		// etc...
+	}
+	
+	@Override
+	public List<TermSet> getSet() {
 		return sets;
 	}
 

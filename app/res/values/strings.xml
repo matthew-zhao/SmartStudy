@@ -10,6 +10,7 @@
     <string name="main_menu_btn_edit">Edit</string>
     <string name="main_menu_btn_import">Import</string>
     <string name="main_menu_btn_take_quiz">Take Quiz</string>
+    <string name="main_menu_btn_learn">Learn</string>
     <string name="main_menu_btn_see_results">See Results</string>
     <string name="main_menu_btn_quit">Quit</string>
 
@@ -23,27 +24,31 @@
     <string name="title_activity_know">KnowActivity</string>
     <string name="title_activity_results">ResultsActivity</string>
     <string name="know_show_answer">Show Answer</string>
-    
+
     <!-- ImportActivity -->
     <string name="title_activity_import">ImportActivity</string>
     <string name="import_btn_add">Add</string>
     <string name="import_btn_exit">Exit</string>
-    
+
     <!-- ResultsActivity -->
     <string name="results_btn_time">Time</string>
     <string name="results_btn_correct">% Correct</string>
     <string name="results_btn_perquestion">Trends/Question</string>
-    
+
     <!-- CategoriesDialog -->
     <string name="categories_dialog_title">Choose categories</string>
     <string name="categories_dialog_done">Done</string>
     <string name="categories_dialog_add">Add category</string>
-    
+
     <!-- SetChooserDialog -->
     <string name="set_chooser_dialog_title">Choose a set</string>
     <string name="set_chooser_dialog_ok">OK</string>
     <string name="set_chooser_dialog_cancel">Cancel</string>
-    
     <string name="menu_settings">Cancel</string>
+    <string name="title_activity_learn">LearnActivity</string>
+    
+    <!-- LearnActivity -->
+    <string name="learn_btn_pass">I know</string>
+    <string name="learn_btn_fail">I don\'t know</string>
 
 </resources>

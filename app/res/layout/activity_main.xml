@@ -13,10 +13,10 @@
         android:id="@+id/btn_main_new_quiz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="newQuiz"
         android:paddingBottom="32dp"
         android:paddingTop="32dp"
-        android:text="@string/main_menu_btn_new_quiz"
-        android:onClick="newQuiz" />"
+        android:text="@string/main_menu_btn_new_quiz" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,10 +28,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="edit"
             android:paddingBottom="32dp"
             android:paddingTop="32dp"
-            android:text="@string/main_menu_btn_edit"
-            android:onClick="edit" />
+            android:text="@string/main_menu_btn_edit" />
 
         <Button
             android:id="@+id/btn_main_import"
@@ -53,10 +53,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="takeQuiz"
             android:paddingBottom="32dp"
             android:paddingTop="32dp"
-            android:text="@string/main_menu_btn_take_quiz"
-            android:onClick="takeQuiz" />
+            android:text="@string/main_menu_btn_take_quiz" />
 
         <Button
             android:id="@+id/btn_main_see_results"
@@ -68,13 +68,30 @@
             android:text="@string/main_menu_btn_see_results" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_main_quit"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="32dp"
-        android:paddingTop="32dp"
-        android:text="@string/main_menu_btn_quit"
-        android:onClick="quit" />
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_main_learn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="learn"
+            android:paddingBottom="32dp"
+            android:paddingTop="32dp"
+            android:text="@string/main_menu_btn_learn" />
+
+        <Button
+            android:id="@+id/btn_main_quit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="quit"
+            android:paddingBottom="32dp"
+            android:paddingTop="32dp"
+            android:text="@string/main_menu_btn_quit" />
+    </LinearLayout>
 
 </LinearLayout>
