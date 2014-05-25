@@ -89,6 +89,11 @@ public final class R {
          */
         public static final int results_btn_time=0x7f050015;
         public static final int results_time=0x7f05000e;
+        public static final int set_chooser_dialog_cancel=0x7f05001d;
+        public static final int set_chooser_dialog_ok=0x7f05001c;
+        /**  SetChooserDialog 
+         */
+        public static final int set_chooser_dialog_title=0x7f05001b;
         public static final int term_btn_categories=0x7f05000d;
         public static final int term_btn_exit=0x7f05000c;
         public static final int term_hint_definition=0x7f05000b;

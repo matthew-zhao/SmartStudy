@@ -38,5 +38,10 @@
     <string name="categories_dialog_title">Choose categories</string>
     <string name="categories_dialog_done">Done</string>
     <string name="categories_dialog_add">Add category</string>
+    
+    <!-- SetChooserDialog -->
+    <string name="set_chooser_dialog_title">Choose a set</string>
+    <string name="set_chooser_dialog_ok">OK</string>
+    <string name="set_chooser_dialog_cancel">Cancel</string>
 
 </resources>
