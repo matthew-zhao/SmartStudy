@@ -71,7 +71,7 @@ public class SetChooserDialogFragment extends DialogFragment {
 	    builder.setTitle(R.string.set_chooser_dialog_title)
 	    // Specify the list array, the items to be selected by default (null for none),
 	    // and the listener through which to receive callbacks when items are selected
-	           .setSingleChoiceItems(items, mSelected,
+	           .setSingleChoiceItems(items, -1,
 	                      new DialogInterface.OnClickListener() {
 	               @Override
 	               public void onClick(DialogInterface dialog, int which) {
