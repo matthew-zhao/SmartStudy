@@ -11,11 +11,9 @@ import android.view.GestureDetector;
 import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.dongsquad.smartstudy.CategoriesDialogFragment.CategoriesDialogListener;
 
@@ -91,7 +89,7 @@ public class TermActivity extends Activity implements CategoriesDialogListener {
 
 		updateCurrentView();
 
-		toast("Swipe Right");
+		Utility.toast(this, "Swipe Right");
 	}
 
 	// go to next term
@@ -102,7 +100,7 @@ public class TermActivity extends Activity implements CategoriesDialogListener {
 
 		updateCurrentView();
 
-		toast("Swipe Left");
+		Utility.toast(this, "Swipe Left");
 	}
 
 	private void updateCurrentTerm() {
@@ -141,19 +139,8 @@ public class TermActivity extends Activity implements CategoriesDialogListener {
 				+ (index + 1));
 	}
 
-	private void toast(final CharSequence text) {
-		runOnUiThread(new Runnable() {
-			@Override
-			public void run() {
-				Toast toast = Toast.makeText(getApplicationContext(), text,
-						Toast.LENGTH_SHORT);
-				toast.show();
-			}
-		});
-	}
-
 	public void exit(View source) {
-		toast("exit");
+		Utility.toast(this, "exit");
 	}
 
 	public void showCategories(View source) {
@@ -168,7 +155,7 @@ public class TermActivity extends Activity implements CategoriesDialogListener {
 			ArrayList<CharSequence> selected) {
 		terms.get(index).clearCategories();
 		terms.get(index).setCategories(selected);
-		toast("selected " + selected.size() + " categories");
+		Utility.toast(this, "selected " + selected.size() + " categories");
 	}
 
 	@Override
@@ -182,7 +169,7 @@ public class TermActivity extends Activity implements CategoriesDialogListener {
 				.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int whichButton) {
 						TermActivity.this.categories.add((CharSequence)input.getText().toString());
-						TermActivity.this.toast("added category:" + input.getText().toString());
+						Utility.toast(TermActivity.this, "added category:" + input.getText().toString());
 						runOnUiThread(new Runnable() {
 							@Override
 							public void run() {
