@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/bin/dexedLibs/aws-android-sdk-1.7.1.1-s3-ea9f592190b15621f5521e7842647eb7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/bin/dexedLibs/splunk-sdk-java-1.3-f0aa059940e3e333764f97a24c344c0f.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/bin/dexedLibs/android-support-v4-22aa4d053a316ce7e87726d81730b488.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/bin/dexedLibs/aws-android-sdk-1.7.1.1-core-92a9a13a407b7787db7c819408c31331.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
