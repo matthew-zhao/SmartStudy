@@ -8,10 +8,11 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends Activity implements SetChooserDialogListener {
-	private static final int NEW = 0;
+	
 	private static final int EDIT = 1;
 	private static final int QUIZ = 2;
 	private static final int LEARN = 3;
+	private static final int RESULTS = 4;
 	private int action = 0;
 
 	private SetChooserDialogFragment setChooser = new SetChooserDialogFragment();
@@ -63,8 +64,8 @@ public class MainActivity extends Activity implements SetChooserDialogListener {
 	}
 
 	public void getResults(View source) {
-		Intent intent = new Intent(MainActivity.this, ResultsActivity.class);
-		startActivity(intent);
+		action = RESULTS;
+		setChooser.setSource(this.source);
 	}
 
 	@Override
@@ -80,6 +81,10 @@ public class MainActivity extends Activity implements SetChooserDialogListener {
 		if (action == LEARN) {
 			Intent intent = new Intent(MainActivity.this, LearnActivity.class);
 			intent.putExtra(LearnActivity.EXTRA_TERMSET, chosenSet);
+			startActivity(intent);
+		}
+		if (action == RESULTS) {
+			Intent intent = new Intent(MainActivity.this, ResultsActivity.class);
 			startActivity(intent);
 		}
 	}
